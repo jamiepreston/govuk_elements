@@ -60,6 +60,7 @@ main {
 }
 
 // Bold, without needing a font size
+.govuk-basic-styles strong,
 .bold {
   font-weight: 700;
 }
@@ -69,6 +70,7 @@ main {
 // Spacing is set in em, using the px to em function in the elements _helpers.scss file
 
 // Headings
+.govuk-basic-styles h1,
 .heading-xlarge {
   @include bold-48();
 
@@ -89,6 +91,7 @@ main {
 
 }
 
+.govuk-basic-styles h2,
 .heading-large {
   @include bold-36();
 
@@ -109,6 +112,7 @@ main {
 
 }
 
+.govuk-basic-styles h3,
 .heading-medium {
   @include bold-24();
 
@@ -122,6 +126,7 @@ main {
 
 }
 
+.govuk-basic-styles h4,
 .heading-small {
   @include bold-19();
 
@@ -162,19 +167,23 @@ p {
 }
 
 // Link styles
+.govuk-basic-styles a,
 .link {
   color: $link-colour;
   text-decoration: underline;
 }
 
+.govuk-basic-styles a:visited,
 .link:visited {
   color: $link-visited-colour;
 }
 
+.govuk-basic-styles a:hover,
 .link:hover {
   color: $link-hover-colour;
 }
 
+.govuk-basic-styles a:active,
 .link:active {
   color: $link-colour;
 }
@@ -231,6 +240,7 @@ p {
 }
 
 // Code styles
+.govuk-basic-styles code,
 .code {
   color: $text-colour;
   background-color: $highlight-colour;
